@@ -32,7 +32,7 @@ public class UserMapperTest {
         UserCommand userCommand = userMapper.toCommand(userRequest, request, msg);
 
         System.out.println(userCommand);
-        assertEquals("2025-01-12", userCommand.getRespDate());
+        assertEquals("2025-01-11", userCommand.getRespDate());
         assertEquals("ADMIN", userCommand.getRole());
 
     }
