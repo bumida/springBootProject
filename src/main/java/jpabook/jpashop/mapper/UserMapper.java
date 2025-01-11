@@ -12,10 +12,8 @@ import java.time.format.DateTimeFormatter;
 public interface UserMapper {
 
 
-    //@Mapping(target = "respDate", ignore = true) //AfterMapping에서 처리
-    //@Mapping(target = "respTime", ignore = true) //AfterMapping에서 처리
-    //pullRequest 내용도 수정이 되는지 확인
-    //
+    @Mapping(target = "respDate", ignore = true) //AfterMapping에서 처리
+    @Mapping(target = "respTime", ignore = true) //AfterMapping에서 처리
     @Mapping(target = "email")
     @Mapping(target = "role")
     UserCommand toCommand(UserRequest UserRequest, String request, String msg);
