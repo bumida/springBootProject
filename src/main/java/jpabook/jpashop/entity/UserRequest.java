@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Getter
-
+//
 public class UserRequest {
     private String firstName;
     private String lastName;
